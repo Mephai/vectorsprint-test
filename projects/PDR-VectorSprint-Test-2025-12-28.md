@@ -123,4 +123,4 @@ Följ denna PDR för att implementera projektet.
 
 ---
 
-*Exporterad från VectorSprint · 2025-12-28T23:20:52.633Z*
+*Exporterad från VectorSprint · 2025-12-28T23:21:35.914Z*
