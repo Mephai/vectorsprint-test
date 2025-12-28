@@ -1,0 +1,180 @@
+{
+  "generatedAt": "2025-12-28T23:20:52.633Z",
+  "projectName": "VectorSprint Test",
+  "context": {
+    "problem": "Användare har svårt att planera och estimera AI-sprint-projekt.",
+    "audience": "Solo-utvecklare och små team som bygger med AI-verktyg.",
+    "scope": [
+      "WHY/WHAT/HOW-flöde för projektdefinition",
+      "Fasplan-generator med credit-estimat",
+      "PDR-export till Markdown och GitHub"
+    ],
+    "constraints": "PWA-first, max 50 Lovable-credits för MVP",
+    "approach": "Iterativ utveckling med fasvis leverans.",
+    "standards": [
+      "accessibility-focus",
+      "mobile-first"
+    ],
+    "projectType": "saas-dashboard"
+  },
+  "phases": [
+    {
+      "name": "Foundation & Setup",
+      "description": "Grundläggande projektstruktur och Supabase-koppling.",
+      "order": 1,
+      "totalEstimate": {
+        "credits_min": 3,
+        "credits_max": 5,
+        "time_hint_seconds": 1800
+      },
+      "tasks": [
+        {
+          "title": "Setup Vite + React + Tailwind",
+          "task_type": "new_component",
+          "scope": {
+            "components": [
+              "App.tsx"
+            ],
+            "views_affected": "all"
+          },
+          "scope_bucket": "small",
+          "size_label": "S",
+          "logic_level": "light",
+          "risk_level": "low",
+          "standards": [],
+          "estimate": {
+            "credits_min": 1,
+            "credits_max": 2,
+            "time_hint_seconds": 600
+          }
+        },
+        {
+          "title": "Konfigurera Supabase-klient",
+          "task_type": "integration",
+          "scope": {
+            "components": [
+              "supabase/client.ts"
+            ],
+            "views_affected": "backend"
+          },
+          "scope_bucket": "small",
+          "size_label": "S",
+          "logic_level": "medium",
+          "risk_level": "low",
+          "standards": [],
+          "estimate": {
+            "credits_min": 2,
+            "credits_max": 3,
+            "time_hint_seconds": 1200
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sprint Flow MVP",
+      "description": "Chat-baserat WHY/WHAT/HOW-flöde med fasplan-generering.",
+      "order": 2,
+      "totalEstimate": {
+        "credits_min": 8,
+        "credits_max": 12,
+        "time_hint_seconds": 5400
+      },
+      "tasks": [
+        {
+          "title": "useSprintFlow hook",
+          "task_type": "logic",
+          "scope": {
+            "components": [
+              "useSprintFlow.ts"
+            ],
+            "views_affected": "chat"
+          },
+          "scope_bucket": "medium",
+          "size_label": "M",
+          "logic_level": "heavy",
+          "risk_level": "medium",
+          "standards": [],
+          "estimate": {
+            "credits_min": 4,
+            "credits_max": 6,
+            "time_hint_seconds": 2700
+          }
+        },
+        {
+          "title": "ChatPage UI",
+          "task_type": "new_flow",
+          "scope": {
+            "components": [
+              "ChatPage.tsx"
+            ],
+            "views_affected": "chat"
+          },
+          "scope_bucket": "medium",
+          "size_label": "M",
+          "logic_level": "medium",
+          "risk_level": "low",
+          "standards": [
+            "mobile-first"
+          ],
+          "estimate": {
+            "credits_min": 4,
+            "credits_max": 6,
+            "time_hint_seconds": 2700
+          }
+        }
+      ]
+    },
+    {
+      "name": "Export & Handoff",
+      "description": "PDR-export, GitHub-integration och handoff-filer.",
+      "order": 3,
+      "totalEstimate": {
+        "credits_min": 5,
+        "credits_max": 8,
+        "time_hint_seconds": 3600
+      },
+      "tasks": [
+        {
+          "title": "PDRExportDialog",
+          "task_type": "new_component",
+          "scope": {
+            "components": [
+              "PDRExportDialog.tsx"
+            ],
+            "views_affected": "chat"
+          },
+          "scope_bucket": "medium",
+          "size_label": "M",
+          "logic_level": "medium",
+          "risk_level": "low",
+          "standards": [],
+          "estimate": {
+            "credits_min": 3,
+            "credits_max": 5,
+            "time_hint_seconds": 2100
+          }
+        },
+        {
+          "title": "GitHub Export Service",
+          "task_type": "integration",
+          "scope": {
+            "components": [
+              "GitHubExportService.ts"
+            ],
+            "views_affected": "export"
+          },
+          "scope_bucket": "small",
+          "size_label": "S",
+          "logic_level": "medium",
+          "risk_level": "low",
+          "standards": [],
+          "estimate": {
+            "credits_min": 2,
+            "credits_max": 3,
+            "time_hint_seconds": 1500
+          }
+        }
+      ]
+    }
+  ]
+}

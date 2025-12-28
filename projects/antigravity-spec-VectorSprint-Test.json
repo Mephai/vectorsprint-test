@@ -1,0 +1,154 @@
+{
+  "version": "1.0",
+  "generator": "VectorSprint v3",
+  "generatedAt": "2025-12-28T23:21:17.931Z",
+  "project": {
+    "name": "VectorSprint Test",
+    "type": "saas-dashboard",
+    "why": {
+      "problem": "Användare har svårt att planera och estimera AI-sprint-projekt.",
+      "audience": "Solo-utvecklare och små team som bygger med AI-verktyg."
+    },
+    "what": {
+      "scope": [
+        "WHY/WHAT/HOW-flöde för projektdefinition",
+        "Fasplan-generator med credit-estimat",
+        "PDR-export till Markdown och GitHub"
+      ],
+      "constraints": "PWA-first, max 50 Lovable-credits för MVP"
+    },
+    "how": {
+      "approach": "Iterativ utveckling med fasvis leverans.",
+      "standards": [
+        "accessibility-focus",
+        "mobile-first"
+      ]
+    }
+  },
+  "phases": [
+    {
+      "order": 1,
+      "name": "Foundation & Setup",
+      "description": "Grundläggande projektstruktur och Supabase-koppling.",
+      "estimate": {
+        "credits_min": 3,
+        "credits_max": 5,
+        "time_seconds": 1800
+      },
+      "tasks": [
+        {
+          "title": "Setup Vite + React + Tailwind",
+          "type": "new_component",
+          "size": "S",
+          "credits": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        {
+          "title": "Konfigurera Supabase-klient",
+          "type": "integration",
+          "size": "S",
+          "credits": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "name": "Sprint Flow MVP",
+      "description": "Chat-baserat WHY/WHAT/HOW-flöde med fasplan-generering.",
+      "estimate": {
+        "credits_min": 8,
+        "credits_max": 12,
+        "time_seconds": 5400
+      },
+      "tasks": [
+        {
+          "title": "useSprintFlow hook",
+          "type": "logic",
+          "size": "M",
+          "credits": {
+            "min": 4,
+            "max": 6
+          }
+        },
+        {
+          "title": "ChatPage UI",
+          "type": "new_flow",
+          "size": "M",
+          "credits": {
+            "min": 4,
+            "max": 6
+          }
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "name": "Export & Handoff",
+      "description": "PDR-export, GitHub-integration och handoff-filer.",
+      "estimate": {
+        "credits_min": 5,
+        "credits_max": 8,
+        "time_seconds": 3600
+      },
+      "tasks": [
+        {
+          "title": "PDRExportDialog",
+          "type": "new_component",
+          "size": "M",
+          "credits": {
+            "min": 3,
+            "max": 5
+          }
+        },
+        {
+          "title": "GitHub Export Service",
+          "type": "integration",
+          "size": "S",
+          "credits": {
+            "min": 2,
+            "max": 3
+          }
+        }
+      ]
+    }
+  ],
+  "brand": {
+    "colors": {
+      "primary": "#FF8A3C",
+      "secondary": "#1E242B",
+      "accent": "#FF8A3C",
+      "background": "#0B0B0F",
+      "text": "#E8E8E8"
+    },
+    "toneVoice": {
+      "formality": "neutral",
+      "personality": [],
+      "industry": "",
+      "doList": [],
+      "dontList": []
+    },
+    "messaging": {
+      "tagline": "",
+      "valueProposition": "",
+      "keyMessages": [],
+      "elevator": ""
+    },
+    "visualDirection": {
+      "theme": "dark",
+      "colorAccents": [],
+      "iconStyle": "outline",
+      "imageStyle": "photography",
+      "moodKeywords": []
+    }
+  },
+  "references": {
+    "pdr": "projects/PDR-*.md",
+    "phases": "phases-*.json",
+    "brandlab": "brandlab-*.json"
+  }
+}

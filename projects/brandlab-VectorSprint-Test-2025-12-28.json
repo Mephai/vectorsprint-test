@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2025-12-28T23:20:52.633Z",
+  "projectName": "VectorSprint Test",
+  "profile": {
+    "colors": {
+      "primary": "#FF8A3C",
+      "secondary": "#1E242B",
+      "accent": "#FF8A3C",
+      "background": "#0B0B0F",
+      "text": "#E8E8E8"
+    },
+    "typography": {
+      "headingFont": "Inter",
+      "bodyFont": "Inter"
+    },
+    "toneVoice": {
+      "formality": "neutral",
+      "personality": [],
+      "industry": "",
+      "doList": [],
+      "dontList": []
+    },
+    "visualDirection": {
+      "theme": "dark",
+      "colorAccents": [],
+      "iconStyle": "outline",
+      "imageStyle": "photography",
+      "moodKeywords": []
+    },
+    "messaging": {
+      "tagline": "",
+      "valueProposition": "",
+      "keyMessages": [],
+      "elevator": ""
+    },
+    "assets": {
+      "referenceUrls": [],
+      "examplePages": []
+    },
+    "completedSections": [],
+    "lastUpdated": "2025-12-28T23:20:31.456Z"
+  }
+}
